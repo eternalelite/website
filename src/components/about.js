@@ -1,8 +1,9 @@
 import React from "react";
 import aboutImg from "../assets/aboutimg.png";
 import {makeStyles} from '@material-ui/core/styles';
+import {withRouter} from 'react-router-dom';
 import { Box, Grid ,Typography,Button, SvgIcon} from "@material-ui/core";
-export default function AboutUs(){
+function AboutUs(){
 
     const style=makeStyles(theme=>({
         left:{
@@ -71,6 +72,76 @@ export default function AboutUs(){
           </Box>
                      </Grid> 
               </Box>
-          
+       <Box display="flex" textAlign="center" flexDirection="column">
+          <Box display="flex" m={3} flexDirection="row">
+              <Box m={1} alignItems="center" display="flex" flexDirection="column"width="33.3%">
+                  <img src={aboutImg}   style={{height:"75%",width:"100%" ,borderRadius:"50%",backgroundColor:"#EEC9D2"}}/>
+                  <Typography variant="h4" style={{ height:"auto",fontWeight:"bold", color:"#8A0000",align:"center"}} >
+                  John D. Hemmingway
+                      </Typography>
+                      <Typography variant="h5" style={{ height:"auto",fontWeight:"", color:"#007F82",align:"center"}} >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis purus vel sapien suscipit tincidunt
+                      </Typography>
+                  
+                  </Box>
+                  
+              <Box m={1} alignItems="center" display="flex" flexDirection="column"width="33.3%">
+              <img src={aboutImg}   style={{height:"75%",width:"100%" ,borderRadius:"50%",backgroundColor:"#EEC9D2"}}/>
+                  <Typography variant="h4" style={{ height:"auto",fontWeight:"bold", color:"#8A0000",align:"center"}} >
+                  John D. Hemmingway
+                      </Typography>
+                      <Typography variant="h5" style={{ height:"auto",fontWeight:"", color:"#007F82",align:"center"}} >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis purus vel sapien suscipit tincidunt
+                      </Typography>
+                  
+                  </Box>
+              <Box m={1} alignItems="center" display="flex" flexDirection="column"width="33.3%">
+              <img src={aboutImg}   style={{height:"75%",width:"100%" ,borderRadius:"50%",backgroundColor:"#EEC9D2"}}/>
+                  <Typography variant="h4" style={{ height:"auto",fontWeight:"bold", color:"#8A0000",align:"center"}} >
+                  John D. Hemmingway
+                      </Typography>
+                      <Typography variant="h5" style={{ height:"auto",fontWeight:"", color:"#007F82",align:"center"}} >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis purus vel sapien suscipit tincidunt
+                      </Typography>
+                  
+                  </Box>
+                  
+              </Box>
+              <Box display="flex" m={3} flexDirection="row">
+              <Box m={1} alignItems="center" display="flex" flexDirection="column"width="33.3%">
+              <img src={aboutImg}   style={{height:"75%",width:"100%" ,borderRadius:"50%",backgroundColor:"#EEC9D2"}}/>
+                  <Typography variant="h4" style={{ height:"auto",fontWeight:"bold", color:"#8A0000",align:"center"}} >
+                  John D. Hemmingway
+                      </Typography>
+                      <Typography variant="h5" style={{ height:"auto",fontWeight:"", color:"#007F82",align:"center"}} >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis purus vel sapien suscipit tincidunt
+                      </Typography>
+                  
+                  </Box>
+                  
+              <Box m={1} alignItems="center" display="flex" flexDirection="column"width="33.3%">
+              <img src={aboutImg}   style={{height:"75%",width:"100%" ,borderRadius:"50%",backgroundColor:"#EEC9D2"}}/>
+                  <Typography variant="h4" style={{ height:"auto",fontWeight:"bold", color:"#8A0000",align:"center"}} >
+                  John D. Hemmingway
+                      </Typography>
+                      <Typography variant="h5" style={{ height:"auto",fontWeight:"", color:"#007F82",align:"center"}} >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis purus vel sapien suscipit tincidunt
+                      </Typography>
+                  
+                  </Box>
+              <Box m={1} alignItems="center" display="flex" flexDirection="column"width="33.3%">
+              <img src={aboutImg}   style={{height:"75%",width:"100%" ,borderRadius:"50%",backgroundColor:"#EEC9D2"}}/>
+                  <Typography variant="h4" style={{ height:"auto",fontWeight:"bold", color:"#8A0000",align:"center"}} >
+                  John D. Hemmingway
+                      </Typography>
+                      <Typography wrap variant="h5" style={{ height:"auto",fontWeight:"", color:"#007F82",align:"center"}} >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis purus vel sapien suscipit tincidunt
+                      </Typography>
+                  
+                  </Box>
+                  
+              </Box>
+              </Box>
 </React.Fragment>           
 )}
+export default withRouter(AboutUs);

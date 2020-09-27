@@ -13,18 +13,16 @@ function App(){
   
   return ( <div><Router><Navbar />
   
-   <Switch>
     <Route exact path="/" >
-    <Home /> 
-        <Image />
+     <Home /> 
+       
     </Route>
-    <Route path="/about" component={AboutUs}> 
+    <Route exact path="/about" component={AboutUs}> 
     
     </Route>
-    <Route path="/gallery"> 
+    <Route exact path="/gallery"> 
       <Gallery />
     </Route>
-   </Switch>
    </Router>
     </div>);
 }

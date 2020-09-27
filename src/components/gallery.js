@@ -1,8 +1,9 @@
 import React from "react";
 import galleryImg from "../assets/galleryimg.png";
 import {makeStyles} from '@material-ui/core/styles';
+import {withRouter} from 'react-router-dom';
 import { Box, Grid ,Typography,Button, SvgIcon} from "@material-ui/core";
-export default function AboutUs(){
+function Gallery(){
 
     const style=makeStyles(theme=>({
         left:{
@@ -74,3 +75,4 @@ export default function AboutUs(){
           
 </React.Fragment>           
 )}
+export default withRouter(Gallery);
