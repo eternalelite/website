@@ -1,6 +1,7 @@
 import React from "react";
 import galleryImg from "../assets/galleryimg.png";
 import {makeStyles} from '@material-ui/core/styles';
+import Footer from "./footer";
 import {withRouter} from 'react-router-dom';
 import { Box, Grid ,Typography,Button, SvgIcon} from "@material-ui/core";
 function Gallery(){
@@ -72,7 +73,7 @@ function Gallery(){
           </Box>
                      </Grid> 
               </Box>
-          
+          <Footer />
 </React.Fragment>           
 )}
 export default withRouter(Gallery);

@@ -5,6 +5,7 @@ import Parties from "../assets/Parties.svg";
 import Birthday from "../assets/Birthday.svg";
 import Corporate from "../assets/Corporate.svg";
 import Image from "./subComponents/images";
+import Footer from "./footer";
 import {makeStyles} from '@material-ui/core/styles';
 import {withRouter} from 'react-router-dom';
 import { Box, Grid ,Typography,Button, SvgIcon} from "@material-ui/core";
@@ -110,7 +111,7 @@ function Home(){
             </Box>
                        </Grid> 
                 </Box>
-            <Image />
+            <Footer />
  </React.Fragment>           
       
     );

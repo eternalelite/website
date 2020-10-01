@@ -2,6 +2,7 @@ import React from "react";
 import aboutImg from "../assets/aboutimg.png";
 import {makeStyles} from '@material-ui/core/styles';
 import {withRouter} from 'react-router-dom';
+import Footer from './footer';
 import { Box, Grid ,Typography,Button, SvgIcon} from "@material-ui/core";
 function AboutUs(){
 
@@ -142,6 +143,30 @@ function AboutUs(){
                   
               </Box>
               </Box>
+              <Box style={{backgroundColor:"#EEC9D2",borderRadius:"25px"}} mt={8} pb={5} width={"100%"}> 
+              <Grid direction="column" justify="center" container  >
+            <Box>
+                <Box  textAlign="center"  spacing={0}  mt={5}>
+                <Typography className={style.right}   variant="h4" style={{height:"auto",fontWeight:"bold", color:"#8A0000",align:"center" }} >
+                Vestibulum sed magna in orci vehicula gravida sed quis
+                
+            </Typography>
+           </Box>
+           <Box textAlign="center" justifyContent="center" m={10}>
+                <Typography className={style.right} variant="h5" style={{height:"auto", color:"#8A0000",align:"center"}}  >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a urna auctor, porttitor magna in, scelerisque mauris.
+                </Typography>
+                
+                    </Box>
+             <Box textAlign="center" justifyContent="center" >       
+                    <Button  variant="contained" style={{backgroundColor:"#007F82",color:'white',height:"auto",fontWeight:"bold",border:"none",marginTop:"10px"}}>Book Us</Button>               
+                    
+                    </Box>
+                    </Box>
+            </Grid>
+           
+                </Box>
+              <Footer />
 </React.Fragment>           
 )}
 export default withRouter(AboutUs);
