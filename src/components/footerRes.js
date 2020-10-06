@@ -1,23 +1,24 @@
 import React from 'react';
 import { Box, Grid ,Typography,Button, SvgIcon} from "@material-ui/core";
-export default function footer(){
+export default function footer(prop){
    const greentxt={
       color:"#007F82"
    };
    const brown={
       color:"#8A0000",
-      fontWeight:"bold"
+      fontWeight:"bold",
+      backgroundColor:prop.color
    }
     return (
-       <React.Fragment>
-      <Box display="flex" alignItems="center" justifyContent="center" flexDirection="column">
-         <Box width="50%" >
+       <React.Fragment  >
+      <Box display="flex"  alignItems="center" justifyContent="center" style={{backgroundColor:prop.color}} flexDirection="column">
+         <Box width="90%"  alignItems="center">
+            
             <table> 
-               <th>
-                 <Typography variant="h6" style={brown} noWrap>
+            <Typography variant="h6" style={brown} noWrap>
                   Say hello to us!
-                     </Typography>
-                  </th>
+                  </Typography>
+               
                   <tr>
                      <td><Box style={greentxt} my={0} paddingTop={0}><Typography>Address.</Typography></Box>
                         </td>
@@ -42,7 +43,7 @@ export default function footer(){
                         
                </table>
          </Box>
-         <Box  width="50%" m={2}>
+         <Box  width="50%" m={2} alignItems="center">
             <table> 
                <th>
                <Box >   <Typography variant="h6"  style={brown}>

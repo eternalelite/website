@@ -69,34 +69,31 @@ function Home(){
             <Bubble />
                 <Box style={{backgroundColor:"#EEC9D2",borderRadius:"25px"}} mt={8} pb={5} width={"100%"}> 
                     <Grid container  direction="column" justify="center" >
-                            <Box display="flex" textAlign="center" flexDirection="column" height="auto" width="100%" >
-                             <Box m={3} color="#8A0000" fontWeight="bold" height="auto" width="90%" style={imgBg}>
+                            <Box alignItems="center" display="flex" textAlign="center" flexDirection="column" height="auto" width="100%" >
+                             <Box my={2} color="#8A0000" fontWeight="bold" height="auto" width="90%" style={imgBg}>
                                  <figure >
                                 <img src={Wedding}   style={{height:"100%",width:"100%"}}/>
                                 <figcaption>Wedding</figcaption>
                                 </figure>
                              </Box>
-                         
-                            
-                                <Box m={3} color="#8A0000" fontWeight="bold"  height="auto" width="90%" style={imgBg} >
+                                <Box my={2} color="#8A0000" fontWeight="bold"  height="auto" width="90%" style={imgBg} >
                                 <figure >
                                 <img src={Birthday}  style={{height:"100%",width:"100%",margin:"0px"}} />
                                 <figcaption>Birthday</figcaption>
                                 </figure>
                                  </Box>
-                                 <Box m={3} color="#8A0000" fontWeight="bold"  height="auto" width="90%" style={imgBg}>
+                                 <Box my={2} color="#8A0000" fontWeight="bold"  height="auto" width="90%" style={imgBg}>
                                 <figure >
                                 <img src={Parties}  style={{height:"100%",width:"100%",margin:"0px"}} />
                                 <figcaption>Parties</figcaption>
                                 </figure>
                                  </Box>
-                                 <Box m={3} color="#8A0000" fontWeight="bold"  height="auto" width="90%" style={imgBg}>
+                                 <Box my={2} color="#8A0000" fontWeight="bold"  height="auto" width="90%" style={imgBg}>
                                 <figure >
                                 <img src={Corporate}  style={{height:"100%",width:"100%",margin:"0px"}} />
                                 <figcaption>Corporate</figcaption>
                                 </figure>
                                  </Box>
-                                 
                             </Box>
                             <Box textAlign="center" width="100%">
                             <Typography className={style.right}   variant="h4" style={{height:"auto",fontWeight:"bold", color:"#8A0000",align:"center"}} Wrap>
@@ -106,7 +103,7 @@ function Home(){
             </Box>
                        </Grid> 
                 </Box>
-            <Footer />
+            <Footer  />
  </React.Fragment>           
       
     );

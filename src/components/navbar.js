@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory } from "react-router-dom";
 import AppBar from '@material-ui/core/AppBar';
-import { Box, Toolbar } from '@material-ui/core';
+import { Box, Toolbar, Typography } from '@material-ui/core';
 import { IconButton } from '@material-ui/core'
 
 const style = theme => ({
@@ -16,7 +16,7 @@ const style = theme => ({
   navLi: {
     color: "#007F82",
     fontFamily: "Segoe UI",
-    font: "bold",
+    fontWeight: "bold",
     margin: "15px",
     fontSize: "12pt",
     cursor: 'pointer'
@@ -37,14 +37,14 @@ function NavBar() {
   return (
     <AppBar position="static" style={st.navbarcl}>
       <Toolbar>
-        <IconButton edge="start" color="inherit" aria-label="menu" />
+        
         <Box flexGrow="1">
-          <h6 style={st.logo} >Eeternal Elite</h6>
+          <Typography style={st.logo} >Eeternal Elite</Typography>
         </Box>
-        <h6 style={st.navLi} onClick={()=>{history.push(`/`)}}> Home </h6>
-        <h6 style={st.navLi} onClick={()=>{history.push(`/gallery`)}}>Gallery</h6>
-        <h6 style={st.navLi} onClick={()=>{history.push(`/about`)}}>About US</h6>
-        <h6 style={st.navLi} >Reach</h6>
+        <Typography style={st.navLi} onClick={()=>{history.push(`/`)}}> Home </Typography>
+        <Typography style={st.navLi} onClick={()=>{history.push(`/gallery`)}}>Gallery</Typography>
+        <Typography style={st.navLi} onClick={()=>{history.push(`/about`)}}>About US</Typography>
+        <Typography style={st.navLi} noWrap>Reach</Typography>
       </Toolbar>
     </AppBar>
   )

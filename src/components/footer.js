@@ -1,16 +1,17 @@
 import React from 'react';
 import { Box, Grid ,Typography,Button, SvgIcon} from "@material-ui/core";
-export default function footer(){
+export default function footer(prop){
    const greentxt={
       color:"#007F82"
    };
    const brown={
       color:"#8A0000",
-      fontWeight:"bold"
+      fontWeight:"bold",
+      backgroundColor:prop.color
    }
     return (
        <React.Fragment>
-      <Box display="flex"  flexDirection="row">
+      <Box display="flex"  flexDirection="row" style={{backgroundColor:prop.color}}>
          <Box width="20%" flexGrow={0.6} m={10}>
             <table> 
                <th>

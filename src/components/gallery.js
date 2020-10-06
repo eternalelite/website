@@ -73,7 +73,7 @@ function Gallery(){
           </Box>
                      </Grid> 
               </Box>
-          <Footer />
+          <Footer color={"#EEC9D2"}/>
 </React.Fragment>           
 )}
 export default withRouter(Gallery);
