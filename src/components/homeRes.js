@@ -10,6 +10,10 @@ import Footer from "./footerRes";
 import {makeStyles} from '@material-ui/core/styles';
 import {withRouter} from 'react-router-dom';
 import { Box, Grid ,Typography,Button, SvgIcon} from "@material-ui/core";
+function importAll(r) {
+    return r.keys().map(r);
+  }
+
 function Home(){
     const imageStyle={
         height:"950px",
@@ -38,6 +42,7 @@ function Home(){
     const imgBg={
         backgroundColor:"#EEE3E7",borderRadius:"10%"
     };
+    const dir=importAll(require.context('../assets/images/home', false, /\.(png)$/));
     return(
       
       <React.Fragment>      
@@ -103,6 +108,18 @@ function Home(){
             </Box>
                        </Grid> 
                 </Box>
+                <Box textAlign="center" width="100%" my={2}>
+                            <Typography className={style.right}   variant="h4" style={{height:"auto",fontWeight:"bold", color:"#8A0000",align:"center"}} Wrap>
+                           Our Past Work
+                
+            </Typography>
+            </Box>
+                <Box m={0} mt={8} > 
+                <Image image={dir}/>
+                <Box width="100%" textAlign="center"justifyContent="center" my={5}>
+                <Button  variant="contained" style={{backgroundColor:"#007F82",color:'white',height:"auto",fontWeight:"bold",border:"none"}}>See More</Button>               
+                </Box>
+                </Box> 
             <Footer  />
  </React.Fragment>           
       

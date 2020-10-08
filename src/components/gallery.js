@@ -2,8 +2,12 @@ import React from "react";
 import galleryImg from "../assets/galleryimg.png";
 import {makeStyles} from '@material-ui/core/styles';
 import Footer from "./footer";
+import Image from "./subComponents/galleryImage";
 import {withRouter} from 'react-router-dom';
 import { Box, Grid ,Typography,Button, SvgIcon} from "@material-ui/core";
+function importAll(r) {
+    return r.keys().map(r);
+  }
 function Gallery(){
 
     const style=makeStyles(theme=>({
@@ -28,6 +32,7 @@ function Gallery(){
     const imgBg={
         backgroundColor:"#EEE3E7",borderRadius:"10%"
     };
+    const dir=importAll(require.context('../assets/images/gallery', false, /\.(png)$/));
     
     return(
       
@@ -72,6 +77,9 @@ function Gallery(){
           </Typography>
           </Box>
                      </Grid> 
+              </Box>
+              <Box m={4} mt={8} > 
+              <Image image={dir} />
               </Box>
           <Footer color={"#EEC9D2"}/>
 </React.Fragment>           
