@@ -1,3 +1,14 @@
+## Publishing
+
+Run following command
+
+`npm run deploy`
+
+If gh-pages branch already exists issue occurs - delete cache using this command
+
+` rm -rf node_modules/.cache/gh-pages`
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
