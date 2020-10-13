@@ -87,7 +87,7 @@ function NavBar() {
           </ListItem>
         ))}
         <ListItem button key={"Reach Us"}>
-            <ListItemText primary={"Reach Us"} style={st.navLi} onClick={()=>{history.push(`/`)}}  />
+            <ListItemText primary={"Reach Us"} style={st.navLi} onClick={()=> window.open("whatsapp://send?phone=+919854267811", "_blank")}  />
           </ListItem>
       </List>
      

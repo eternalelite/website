@@ -2,7 +2,7 @@ import React from "react";
 import galleryImg from "../assets/galleryimg.png";
 import {makeStyles} from '@material-ui/core/styles';
 import Footer from "./footerRes";
-import Image from "./subComponents/galleryImage";
+import Image from "./subComponents/galleryImageRes";
 import Bubble from './subComponents/bubbleRes';
 import {withRouter} from 'react-router-dom';
 import { Box, Grid ,Typography,Button, SvgIcon} from "@material-ui/core";

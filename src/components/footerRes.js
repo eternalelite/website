@@ -11,11 +11,11 @@ export default function footer(prop){
    }
     return (
        <React.Fragment  >
-      <Box display="flex"  alignItems="center" justifyContent="center" style={{backgroundColor:prop.color}} flexDirection="column">
-         <Box width="90%"  alignItems="center">
+      <Box display="flex"   style={{backgroundColor:prop.color}} flexDirection="column">
+         <Box width="90%" mx={3} my={2} alignItems="center">
             
             <table> 
-            <Typography variant="h6" style={brown} noWrap>
+            <Typography variant="" style={brown} noWrap>
                   Say hello to us!
                   </Typography>
                
@@ -32,21 +32,21 @@ export default function footer(prop){
                         </Typography>
                         </Box>
                         </td><td>
-                           <Box my={1} style={greentxt}><Typography>9854267811</Typography></Box>
+                           <Box my={1} style={greentxt}><Typography onClick={()=> window.open("whatsapp://send?phone=+919854267811", "_blank")}>9854267811</Typography></Box>
                         </td>
                      </tr>
                      <tr>
                      <td><Box my={1} style={greentxt}><Typography>Email.</Typography></Box>
-                        </td><td><Box my={1} style={greentxt}><Typography>contact@eternalelite.com</Typography></Box>
+                        </td><td><Box my={1} style={greentxt}><Typography wrap>contact@eternalelite.com</Typography></Box>
                         </td>
                      </tr>
                         
                </table>
          </Box>
-         <Box  width="50%" m={2} alignItems="center">
+         <Box  width="90%" m={2} alignItems="center">
             <table> 
                <th>
-               <Box >   <Typography variant="h6"  style={brown}>
+               <Box >   <Typography variant=""  style={brown}>
                      Menu
                      </Typography>
                      </Box>

@@ -16,7 +16,8 @@ function importAll(r) {
   }
 const comments={
     1:" consectetur adipiscing elit. Cras a urna auctor, porttitor magna in, scelerisque mauris.",
-    2:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a urna auctor, porttitor magna in, scelerisque mauris."
+    2:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a urna auctor, porttitor magna in, scelerisque mauris.",
+    3:"dolor sit amet, consectetur adipiscing elit. C"
 };
 var comment=comments[1];
 function Home(){
@@ -145,15 +146,20 @@ function Home(){
             </Typography>
            </Box>
            <Box textAlign="center" justifyContent="center" m={10}>
-                <Typography className={style.right} variant="h5" style={{height:"auto", color:"#8A0000",align:"center"}}  >
+                <Typography id="comment" className={style.right} variant="h5" style={{height:"auto", color:"#8A0000",align:"center"}}  >
                {comment}
                 </Typography>
                 
                     </Box>
+                    <Box textAlign="center" justifyContent="center" m={10}>
+                    <Typography variant="h5" style={{ height:"auto",fontWeight:"bold", color:"#007F82",align:"center"}} >
+                  John D. Hemmingway
+                      </Typography>
+                        </Box>
              <Box textAlign="center" display="flex"  alignItems="center" justifyContent="center" >       
-                   <div style={{height:"10px",width:"10px",backgroundColor:"#8A0000",borderRadius:"50%",margin:"2px"}}/>
-                   <div style={{height:"10px",width:"10px",backgroundColor:"#EEE3E7",borderRadius:"50%",margin:"2px"}}/>
-                   <div style={{height:"10px",width:"10px",backgroundColor:"#EEE3E7",borderRadius:"50%",margin:"2px"}}/>
+                   <div onClick={(e) => upate(e,comments[2])} onMouseOver={(e)=>hover(e)} onMouseLeave={(e)=>leave(e)} style={{height:"10px",width:"10px",backgroundColor:"#8A0000",borderRadius:"50%",margin:"2px"}}/>
+                   <div onClick={(e) => upate(e,comments[1])} onMouseEnter={(e)=>hover(e)} onMouseLeave={(e)=>leave(e)} style={{height:"10px",width:"10px",backgroundColor:"#EEE3E7",borderRadius:"50%",margin:"2px"}}/>
+                   <div onClick={(e) => upate(e,comments[3])} onMouseEnter={(e)=>hover(e)} onMouseLeave={(e)=>leave(e)} style={{height:"10px",width:"10px",backgroundColor:"#EEE3E7",borderRadius:"50%",margin:"2px"}}/>
                    
                     </Box>
                     </Box>
@@ -166,9 +172,20 @@ function Home(){
       
     );
 }
-function hover(){
-    Event.target.style.backgroundColor="#8A0000";
+function hover(e){
+    e.target.style.backgroundColor="#8A0000";
 
-    alert();
+   
 }
+function leave(e){
+    e.target.style.backgroundColor="#EEE3E7";
+}
+function upate(e,i) {
+   // e.target.siblings.style.backgroundColor="#EEASD";
+    e.target.style.backgroundColor="#8A0000";
+
+    console.log(e.target.innerHTML);
+      document.getElementById("comment").innerHTML = i;
+}
+    
 export default withRouter(Home);

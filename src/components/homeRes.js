@@ -13,6 +13,12 @@ import { Box, Grid ,Typography,Button, SvgIcon} from "@material-ui/core";
 function importAll(r) {
     return r.keys().map(r);
   }
+  const comments={
+    1:" consectetur adipiscing elit. Cras a urna auctor, porttitor magna in, scelerisque mauris.",
+    2:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a urna auctor, porttitor magna in, scelerisque mauris.",
+    3:"dolor sit amet, consectetur adipiscing elit. C"
+};
+var comment=comments[1];
 
 function Home(){
     const imageStyle={
@@ -120,9 +126,55 @@ function Home(){
                 <Button  variant="contained" style={{backgroundColor:"#007F82",color:'white',height:"auto",fontWeight:"bold",border:"none"}}>See More</Button>               
                 </Box>
                 </Box> 
+                <Box style={{backgroundColor:"#EEC9D2",borderRadius:"25px"}} mt={8} pb={5} width={"100%"}> 
+              <Grid direction="column" justify="center" container  >
+            <Box>
+                <Box  textAlign="center"  spacing={0}  mt={5}>
+                <Typography className={style.right}   variant="h4" style={{height:"auto",fontWeight:"bold", color:"#8A0000",align:"center" }} >
+               Don't Believe us? Listen what our customers say
+                
+            </Typography>
+           </Box>
+           <Box textAlign="center" justifyContent="center" m={10}>
+                <Typography id="comment" className={style.right} variant="h5" style={{height:"auto", color:"#8A0000",align:"center"}}  >
+               {comment}
+                </Typography>
+                
+                    </Box>
+                    <Box textAlign="center" justifyContent="center" m={10}>
+                    <Typography variant="h5" style={{ height:"auto",fontWeight:"bold", color:"#007F82",align:"center"}} >
+                  John D. Hemmingway
+                      </Typography>
+                        </Box>
+             <Box textAlign="center" display="flex"  alignItems="center" justifyContent="center" >       
+                   <div onClick={(e) => upate(e,comments[2])} onMouseOver={(e)=>hover(e)} onMouseLeave={(e)=>leave(e)} style={{height:"10px",width:"10px",backgroundColor:"#8A0000",borderRadius:"50%",margin:"2px"}}/>
+                   <div onClick={(e) => upate(e,comments[1])} onMouseEnter={(e)=>hover(e)} onMouseLeave={(e)=>leave(e)} style={{height:"10px",width:"10px",backgroundColor:"#EEE3E7",borderRadius:"50%",margin:"2px"}}/>
+                   <div onClick={(e) => upate(e,comments[3])} onMouseEnter={(e)=>hover(e)} onMouseLeave={(e)=>leave(e)} style={{height:"10px",width:"10px",backgroundColor:"#EEE3E7",borderRadius:"50%",margin:"2px"}}/>
+                   
+                    </Box>
+                    </Box>
+            </Grid>
+           
+                </Box>
+           
             <Footer  />
  </React.Fragment>           
       
     );
+}
+function hover(e){
+    e.target.style.backgroundColor="#8A0000";
+
+   
+}
+function leave(e){
+    e.target.style.backgroundColor="#EEE3E7";
+}
+function upate(e,i) {
+   // e.target.siblings.style.backgroundColor="#EEASD";
+    e.target.style.backgroundColor="#8A0000";
+
+    console.log(e.target.innerHTML);
+      document.getElementById("comment").innerHTML = i;
 }
 export default withRouter(Home);

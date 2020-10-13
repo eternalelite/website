@@ -44,7 +44,7 @@ function NavBar() {
         <Typography style={st.navLi} onClick={()=>{history.push(`/`)}}> Home </Typography>
         <Typography style={st.navLi} onClick={()=>{history.push(`/gallery`)}}>Gallery</Typography>
         <Typography style={st.navLi} onClick={()=>{history.push(`/about`)}}>About US</Typography>
-        <Typography style={st.navLi} noWrap>Reach</Typography>
+        <Typography style={st.navLi} onClick={()=> window.open("https://api.whatsapp.com/send?phone=0000000000","_blank")} noWrap>Reach</Typography>
       </Toolbar>
     </AppBar>
   )

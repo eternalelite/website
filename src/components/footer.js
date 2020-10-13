@@ -32,7 +32,7 @@ export default function footer(prop){
                         </Typography>
                         </Box>
                         </td><td>
-                           <Box my={1} style={greentxt}><Typography>9854267811</Typography></Box>
+                           <Box my={1} style={greentxt}><Typography onClick={()=> window.open("whatsapp://send?phone=+919854267811", "_blank")}>9854267811</Typography></Box>
                         </td>
                      </tr>
                      <tr>

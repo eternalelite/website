@@ -4,13 +4,13 @@ export default function Image(prop){
     const images = prop.image;
     const grid={
   width: "100%",
-  height: "400vh",
+  height: "175vh",
   display: "grid",
   gridTemplateColumns: "repeat(15, 1fr)",
-  gridTemplateRows: "repeat(16, 1fr)",
+  gridTemplateRows: "repeat(12, 1fr)",
 
-  rowGap: "10px",
-  columnGap: "10px",
+  rowGap: "2px",
+  columnGap: "2px",
 
     };
     const img={
@@ -67,51 +67,51 @@ export default function Image(prop){
             <img src={images[3]} style={img}/>
             </figure>
             
-            <figure style={{gridColumn: "1 /8",gridRow: "6/ 9" ,margin:"1px"}}>
+            <figure style={{gridColumn: "1 /8",gridRow: "6/ 8" ,margin:"1px"}}>
             <img src={images[4]} style={img}/>
             </figure>
             
-            <figure style={{gridColumn: "8 /12",gridRow: "6 / 9" ,margin:"1px"}}>
+            <figure style={{gridColumn: "8 /12",gridRow: "6 / 8" ,margin:"1px"}}>
             <img src={images[10]} style={img}/>
             </figure>
             
-            <figure style={{gridColumn: "12 /16",gridRow: "6 / 8" ,margin:"1px"}}>
+            <figure style={{gridColumn: "12 /16",gridRow: "6 / 7" ,margin:"1px"}}>
             <img src={images[8]} style={img}/>
             </figure>
             
-            <figure style={{gridColumn: "12 /16",gridRow: "8 / 9" ,margin:"1px"}}>
+            <figure style={{gridColumn: "12 /16",gridRow: "7 / 8" ,margin:"1px"}}>
             <img src={images[6]} style={img}/>
             </figure>
             
-            <figure style={{gridColumn: "12 /16",gridRow: "9 / 10" ,margin:"1px"}}>
+            <figure style={{gridColumn: "12 /16",gridRow: "8 / 9" ,margin:"1px"}}>
             <img src={images[14]} style={img}/>
             </figure>
             
-            <figure style={{gridColumn: "8 /12",gridRow: "9 / 10" ,margin:"1px"}}>
+            <figure style={{gridColumn: "8 /12",gridRow: "8 / 9" ,margin:"1px"}}>
             <img src={images[12]} style={img}/>
             </figure>
             
-            <figure style={{gridColumn: "4 /8",gridRow: "9 / 10" ,margin:"1px"}}>
+            <figure style={{gridColumn: "4 /8",gridRow: "8 / 9" ,margin:"1px"}}>
             <img src={images[13]} style={img}/>
             </figure>
             
-            <figure style={{gridColumn: "1 /4",gridRow: "9 / 12" ,margin:"1px"}}>
+            <figure style={{gridColumn: "1 /4",gridRow: "8 / 10" ,margin:"1px"}}>
             <img src={images[17]} style={img}/>
             </figure>
             
-            <figure style={{gridColumn: "4 /8",gridRow: "10 / 13" ,margin:"1px"}}>
+            <figure style={{gridColumn: "4 /8",gridRow: "9 / 10" ,margin:"1px"}}>
             <img src={images[5]} style={img}/>
             </figure>
             
-            <figure style={{gridColumn: "8 /16",gridRow: "10 / 17" ,margin:"1px"}}>
+            <figure style={{gridColumn: "8 /16",gridRow: "9 / 11" ,margin:"1px"}}>
             <img src={images[1]} style={img}/>
             </figure>
             
-            <figure style={{gridColumn: "4 /8",gridRow: "13 / 17" ,margin:"1px"}}>
+            <figure style={{gridColumn: "4 /8",gridRow: "10 / 11" ,margin:"1px"}}>
             <img src={images[0]} style={img}/>
             </figure>
-            
-            <figure style={{gridColumn: "1 /4",gridRow: "12 / 17" ,margin:"1px"}}>
+
+            <figure style={{gridColumn: "1 /4",gridRow: "10 / 11" ,margin:"1px"}}>
             <img src={images[8]} style={img}/>
             </figure>
        </div>
