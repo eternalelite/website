@@ -44,13 +44,13 @@ function Gallery(){
           <Box>
               <Box  textAlign="center"  spacing={0}  mt={20}>
               <Typography className={style.right}   variant="h4" style={{height:"auto",fontWeight:"bold", color:"#8A0000",align:"center" }} >
-              We believe actions speak louder than words 
+              Take a look at these moments we captured
               
           </Typography>
          </Box>
          <Box textAlign="center" justifyContent="center" m={10}>
               <Typography className={style.right} variant="h4" style={{height:"auto",fontWeight:"bold", color:"#8A0000",align:"center"}}  >
-              Let our work speak for itself</Typography>
+              the moments that last a lifetime</Typography>
               
                   </Box>
            
@@ -72,7 +72,10 @@ function Gallery(){
                          
                           <Box textAlign="center" height="100%" width="80%">
                           <Typography className={style.right}   variant="h4" style={{height:"auto",fontWeight:"bold", color:"#8A0000",align:"center"}} >
-                          Curabitur sed enim eu nisi sollicitudin Vestibulum lobortis, ligula sit amet finibus
+                          These moments happen once in a lifetime 
+They aren’t waves to recur 
+Hence is our job to capture the flicker
+A moment in time, a memory of a lifetime
               
           </Typography>
           </Box>

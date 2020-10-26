@@ -64,7 +64,7 @@ function AboutUs(){
                          
                           <Box textAlign="center" height="100%" width="80%">
                           <Typography className={style.right}   variant="h4" style={{height:"",fontWeight:"bold", color:"#8A0000",align:"center"}} >
-                          Vestibulum sed magna in orci vehicula gravida sed quis lacus. Proin dignissim erat nec ante consequat finibus. Nam sed nulla ac nisl tincidunt suscipit
+                          Here we are, the curators of your personal or professional event, constantly striving to give you the best, constantly striving so you can have the best. 
               
           </Typography>
           </Box>

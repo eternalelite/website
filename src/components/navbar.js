@@ -39,7 +39,7 @@ function NavBar() {
       <Toolbar>
         
         <Box flexGrow="1">
-          <Typography style={st.logo} >Eeternal Elite</Typography>
+          <Typography style={st.logo} >Eternal Elite</Typography>
         </Box>
         <Typography style={st.navLi} onClick={()=>{history.push(`/`)}}> Home </Typography>
         <Typography style={st.navLi} onClick={()=>{history.push(`/gallery`)}}>Gallery</Typography>

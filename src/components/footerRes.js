@@ -1,8 +1,13 @@
 import React from 'react';
+import { useHistory } from "react-router-dom";
 import { Box, Grid ,Typography,Button, SvgIcon} from "@material-ui/core";
-export default function footer(prop){
+export default function Footer(prop){
+   
+  let history = useHistory()
+
    const greentxt={
-      color:"#007F82"
+      color:"#007F82",
+      cursor: 'pointer'
    };
    const brown={
       color:"#8A0000",
@@ -52,25 +57,24 @@ export default function footer(prop){
                      </Box>
                   </th>
                   <tr>
-                     <td><Box mx={1} style={greentxt}><Typography>Home
+                     <td><Box mx={1} style={greentxt} onClick={()=>{history.push(`/`)}}><Typography>Home
                         </Typography></Box>
                         </td>
-                        <td><Box mx={1} style={greentxt}><Typography>Blog</Typography></Box>
+                        <td><Box mx={1} style={greentxt} onClick={()=>{history.push(`/gallery`)}}><Typography>Spotlight</Typography></Box>
                         </td>
                      </tr>
                      <tr>
-                     <td><Box mx={1} style={greentxt}><Typography>About Us</Typography></Box>
-                        </td><td><Box mx={1} style={greentxt}><Typography>Spotlight</Typography></Box>
+                     <td><Box mx={1} style={greentxt} onClick={()=>{history.push(`/about`)}}><Typography>About Us</Typography></Box>
+                        </td>
+                        <td><Box mx={1}style={greentxt} > <Typography>Contact Us</Typography></Box>
                         </td>
                      </tr>
                      <tr>
-                     <td><Box mx={1} style={greentxt}><Typography>Services</Typography></Box>
-                        </td><td><Box mx={1}style={greentxt} > <Typography>Contact Us</Typography></Box>
+                     <td><Box mx={1} style={greentxt} onClick={()=>{history.push(`/`)}}><Typography>Services</Typography></Box>
                         </td>
                      </tr>
                      <tr>
-                     <td><Box mx={1} style={greentxt}><Typography>Our Work</Typography></Box>
-                        </td><td><Box mx={1} style={greentxt} ><Typography>FAQ's</Typography></Box>
+                     <td><Box mx={1} style={greentxt} onClick={()=>{history.push(`/gallery`)}}><Typography>Our Work</Typography></Box>
                         </td>
                      </tr>
                         

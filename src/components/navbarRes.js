@@ -98,7 +98,7 @@ function NavBar() {
       <Toolbar >
         <IconButton edge="start" color="inherit" aria-label="menu" />
         <Box flexGrow="1"  alignItems="center" textAlign="center">
-          <h6 style={st.logo} >Eeternal Elite</h6>
+          <h6 style={st.logo} >Eternal Elite</h6>
         </Box>
         <div>
       {[ 'right'].map((anchor) => (

@@ -66,7 +66,7 @@ function Home(){
             </Typography>
            </Box>
            <Box textAlign="center" justifyContent="center" m={10}>
-                <Typography className={style.right} variant="h4" style={{height:"auto",fontWeight:"bold", color:"#8A0000",align:"center"}}  >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Typography>
+                <Typography className={style.right} variant="h4" style={{height:"auto",fontWeight:"bold", color:"#8A0000",align:"center"}}  >Let us help you make the best of your day. We know this day is one of a kind, let us make it look like one of a kind.</Typography>
                 
                     </Box>
              <Box textAlign="center" justifyContent="center" >       
@@ -116,7 +116,7 @@ function Home(){
                 </Box>
                 <Box textAlign="center" width="100%" my={2}>
                             <Typography className={style.right}   variant="h4" style={{height:"auto",fontWeight:"bold", color:"#8A0000",align:"center"}} Wrap>
-                           Our Past Work
+                            Flowers of Happiness We’ve Planted So Far
                 
             </Typography>
             </Box>
@@ -131,7 +131,7 @@ function Home(){
             <Box>
                 <Box  textAlign="center"  spacing={0}  mt={5}>
                 <Typography className={style.right}   variant="h4" style={{height:"auto",fontWeight:"bold", color:"#8A0000",align:"center" }} >
-               Don't Believe us? Listen what our customers say
+                Don’t take our word, take theirs
                 
             </Typography>
            </Box>

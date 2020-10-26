@@ -35,9 +35,9 @@ class App extends React.Component{
     <Router>
       <NavbarRes />
       <Switch>
-        <Route exact path={["/","/Home"]} component={HomeRes} />
         <Route exact path="/about us" component={AboutUsRes} />
         <Route exact path="/gallery" component={GalleryRes} />
+        <Route exact path={["/","/home","*"]} component={HomeRes} />
       </Switch>
     </Router>
     </MediaQuery>
@@ -45,9 +45,9 @@ class App extends React.Component{
     <Router>
       <Navbar />
       <Switch>
-        <Route exact path={["/","/Home"]} component={Home} />
         <Route exact path="/about" component={AboutUs} />
         <Route exact path="/gallery" component={Gallery} />
+        <Route exact path={["/","/home","*"]} component={Home} />
       </Switch>
     </Router>
     </MediaQuery>
